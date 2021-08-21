@@ -1,4 +1,7 @@
 {
+  "rules": {
+    "no-console": "off"
+  },
   "extends": [
     "@antfu",
     "vue-global-api"
