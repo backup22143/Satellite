@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  <div class="item bg-dark-500 shadow rounded h-75 skeleton-box">
+  <div class="item bg-dark-500 shadow rounded-xl skeleton-box">
     <!-- <h3>{{ props.title }}</h3>
 
     <Spinner v-show="loading"></Spinner> -->
