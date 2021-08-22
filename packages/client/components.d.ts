@@ -3,6 +3,8 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    CarbonArrowLeft: typeof import('virtual:vite-icons/carbon/arrow-left')['default']
+    CarbonArrowRight: typeof import('virtual:vite-icons/carbon/arrow-right')['default']
     CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
     CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
     CarbonDownload: typeof import('virtual:vite-icons/carbon/download')['default']
