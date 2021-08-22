@@ -62,14 +62,18 @@ const slidesPerView = computed(() => {
     @slideChange="onSlideChange"
   >
     <SwiperSlide v-for="item in props.items" :key="item.id" :data-hash="item.id">
-      <MasonryItem />
+      <MasonryItem class="h-full" />
     </SwiperSlide>
 
-    <!-- <div class="swiper-button-prev">
-        Yes
-      </div>
-      <div class="swiper-button-next">
-        No
-      </div> -->
+    <div class="swiper-button-prev">
+      <button>
+        <carbon-arrow-left />
+      </button>
+    </div>
+    <div class="swiper-button-next">
+      <button>
+        <carbon-arrow-right />
+      </button>
+    </div>
   </VSwiper>
 </template>
