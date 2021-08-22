@@ -12,7 +12,7 @@ const props = defineProps<{
 </script>
 <template>
   <Label :title="title" :show-more="showMore" />
-  <Swiper :items="props.items" class="mb-6 h-42" />
+  <Swiper :items="props.items" class="mb-6 h-42 px-4" />
 </template>
 
 <style scoped lang="postcss">

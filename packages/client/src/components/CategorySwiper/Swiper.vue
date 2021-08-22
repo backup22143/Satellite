@@ -47,33 +47,57 @@ const slidesPerView = computed(() => {
     return 7
 })
 
+const options = {
+  navigation: {
+    prevEl: '.prevEl',
+    nextEl: '.nextEl',
+  },
+}
 </script>
 
 <template>
-  <VSwiper
-    :slides-per-view="slidesPerView"
-    :space-between="16"
-    navigation
-    :hash-navigation="{
-      'watchState': true
-    }"
-    :style="{'--swiper-navigation-color': '#fff'}"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
-  >
-    <SwiperSlide v-for="item in props.items" :key="item.id" :data-hash="item.id">
-      <MasonryItem class="h-full" />
-    </SwiperSlide>
+  <div class="relative overflow-hidden">
+    <VSwiper
+      class="relative h-full overflow-visible"
+      :slides-per-view="slidesPerView"
+      :space-between="16"
+      :slides-per-group="slidesPerView"
+      :navigation="options.navigation"
+      :hash-navigation="{
+        'watchState': true
+      }"
+      :style="{'--swiper-navigation-color': '#fff'}"
+      @swiper="onSwiper"
+      @slideChange="onSlideChange"
+    >
+      <SwiperSlide v-for="item in props.items" :key="item.id" :data-hash="item.id">
+        <MasonryItem class="h-full">
+        </MasonryItem>
+      </SwiperSlide>
 
-    <div class="swiper-button-prev">
-      <button>
-        <carbon-arrow-left />
-      </button>
-    </div>
-    <div class="swiper-button-next">
-      <button>
-        <carbon-arrow-right />
-      </button>
-    </div>
-  </VSwiper>
+      <div class="prevEl -left-4 button-container group">
+        <button class="button">
+          <carbon-arrow-left style="font-size: 1.5rem;" />
+        </button>
+      </div>
+
+      <div class="nextEl -right-4 button-container group">
+        <button class="button">
+          <carbon-arrow-right style="font-size: 1.5rem;" />
+        </button>
+      </div>
+    </VSwiper>
+  </div>
 </template>
+
+<style scoped lang="postcss">
+.button-container {
+  @apply absolute top-0 h-full w-10 z-10 flex justify-center items-center cursor-pointer;
+}
+
+.button {
+  background-color: #121212;
+  @apply h-10 w-10 shadow rounded-full flex justify-center items-center group-hover:bg-gray-600 outline-none;
+  transition: background-color 0.2s;
+}
+</style>
