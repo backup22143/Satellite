@@ -6,6 +6,7 @@ declare module 'vue' {
     CarbonArrowLeft: typeof import('virtual:vite-icons/carbon/arrow-left')['default']
     CarbonArrowRight: typeof import('virtual:vite-icons/carbon/arrow-right')['default']
     CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
+    CarbonChevronLeft: typeof import('virtual:vite-icons/carbon/chevron-left')['default']
     CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
     CarbonDownload: typeof import('virtual:vite-icons/carbon/download')['default']
     CarbonLanguage: typeof import('virtual:vite-icons/carbon/language')['default']
@@ -28,6 +29,7 @@ declare module 'vue' {
     Item: typeof import('./src/components/Masonry/Item.vue')['default']
     Label: typeof import('./src/components/CategorySwiper/Label.vue')['default']
     README: typeof import('./src/components/README.md')['default']
+    SearchBar: typeof import('./src/components/SearchBar/SearchBar.vue')['default']
     Spinner: typeof import('./src/components/Spinner/Spinner.vue')['default']
     Swiper: typeof import('./src/components/CategorySwiper/Swiper.vue')['default']
   }
