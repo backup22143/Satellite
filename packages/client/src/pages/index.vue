@@ -19,35 +19,36 @@ type Item = {
 // }
 
 // const { t } = useI18n()
-const items: Item[] = new Array(10).fill({ id: '1', title: 'hello' })
+const items: Item[] = new Array(10).fill({ title: 'Lorem Ipsum' })
+const itemsWithIds = items.map((item, index) => ({ ...item, id: index.toString() }))
 // const items = ref<Item[]>(defaultitems)
 const categories = [
   {
     id: 'popular',
     title: 'Popular',
-    items,
+    items: itemsWithIds,
   },
   {
     id: 'new',
     title: 'New',
-    items,
+    items: itemsWithIds,
   },
   {
     id: 'movies',
     title: 'Movies',
-    items,
+    items: itemsWithIds,
   },
   {
     id: 'shows',
     title: 'Shows',
-    items,
+    items: itemsWithIds,
   },
 
 ]
 </script>
 
 <template>
-  <Hero class="m-0"></Hero>
+  <Hero class="m-0 mx-4"></Hero>
 
   <div class="page pt-10">
     <CategorySwiper v-for="category in categories" :key="category.id" :title="category.title" :items="category.items" show-more></CategorySwiper>

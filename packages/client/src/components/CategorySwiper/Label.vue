@@ -19,7 +19,7 @@ const props = defineProps<{
 
 <style module lang="postcss">
 .container {
-  @apply pb-2 flex justify-between items-end;
+  @apply pb-2 px-4 flex justify-between items-end;
 }
 
 .heading {

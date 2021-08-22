@@ -15,6 +15,7 @@
     <!-- <h3>{{ props.title }}</h3>
 
     <Spinner v-show="loading"></Spinner> -->
+    <slot></slot>
   </div>
 </template>
 
