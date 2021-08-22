@@ -11,4 +11,7 @@ intro:
   hi: Hi, {name}!
   aka: Also known as
   whats-your-name: What's your name?
+search:
+  placeholder: Search
+  recent: Recent Searches
 not-found: Not found
