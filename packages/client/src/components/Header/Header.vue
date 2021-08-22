@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <header class="pt-2 pb-4 flex justify-between items-center">
+  <header class="pt-2 pb-4 mx-4 flex justify-between items-center">
     <h1 class="text-xl font-bold text-left flex justify-between cursor-pointer pr-32">
       <carbon-satellite style="font-size: 1.75em;" />
     </h1>
@@ -16,7 +16,9 @@
 
     <div>
       <div class="hover:bg-gray-800 rounded-full p-3 icon-btn">
-        <carbon-search style="font-size: 1.75em;" />
+        <a href="/search">
+          <carbon-search style="font-size: 1.75em;" />
+        </a>
       </div>
 
       <div class="hover:bg-gray-800 rounded-full p-3 icon-btn relative">
