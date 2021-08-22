@@ -12,3 +12,4 @@
 - [  ] Listen for streams (twitch, etc)
 - [  ] Boolean to allow for self hosted database or Satellite generate database
 - [  ] Profile based content selection
+- [  ] Ratio based height/width for masonry items
