@@ -1,4 +1,5 @@
 @import './markdown.css';
+@import './patterns/patterns.css';
 
 html,
 body,
@@ -38,6 +39,36 @@ html.dark {
 .icon-btn {
   @apply inline-block cursor-pointer select-none
     opacity-75 transition duration-200 ease-in-out
-    hover:opacity-100 hover:text-teal-600;
+    hover:opacity-100 hover:text-white;
   font-size: 0.9em;
+}
+
+.skeleton-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #e2e8f0;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.02) 20%,
+      rgba(255, 255, 255, 0.03) 50%,
+      rgba(255, 255, 255, 0.02) 70%,
+      rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 3s infinite;
+    content: '';
+  }
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
 }
