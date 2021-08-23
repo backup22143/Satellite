@@ -14,10 +14,12 @@ edition = "2018"
 publish = false
 
 [dependencies]
-rocket = "0.5.0-rc.1"
+# https://api.rocket.rs/v0.5-rc/rocket/#features
+rocket = { version = "^0.5.0-rc.1", features = ["json", "uuid"] }
+# rocket_contrib = { version = "0.5.0-rc.1", features = ["helmet", "uuid"] }
 redis = "0.21.0"
 postgres = "0.19.1"
-uuid = { version = "0.8.2", features = ["v5"] }
+# uuid = { version = "0.8.2", features = ["v5"] }
 
 [badges]
 travis-ci = { repository = "" }
