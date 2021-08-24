@@ -2,9 +2,9 @@
 name = "satellite-api"
 description = "API server for Satellite"
 authors = ["Zach Barnes <zach.c.barnes@gmail.com>"]
-categories = []
-keywords = []
-exclude = []
+# categories = []
+# keywords = []
+# exclude = []
 repository = "https://github.com/zachcb/Satellite"
 homepage = "https://github.com/zachcb/Satellite"
 readme = "README.md"
@@ -16,24 +16,5 @@ publish = false
 [dependencies]
 # https://api.rocket.rs/v0.5-rc/rocket/#features
 rocket = { version = "^0.5.0-rc.1", features = ["json", "uuid"] }
-# rocket_contrib = { version = "0.5.0-rc.1", features = ["helmet", "uuid"] }
 redis = "0.21.0"
 postgres = "0.19.1"
-# uuid = { version = "0.8.2", features = ["v5"] }
-
-[badges]
-travis-ci = { repository = "" }
-
-# [[bin]]
-# name = "rocketapi"
-# path = "src/main.rs"
-
-# [profile.dev]
-# opt-level = 3
-
-# [profile.release]
-# codegen-units = 1
-# debug-assertions = false
-# debug = false
-# opt-level = 3
-# lto = true
