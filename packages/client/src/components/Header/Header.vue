@@ -5,13 +5,15 @@
 <template>
   <header class="pt-2 pb-4 mx-4 flex justify-between items-center">
     <h1 class="text-xl font-bold text-left flex justify-between cursor-pointer pr-32">
-      <carbon-satellite style="font-size: 1.75em;" />
+      <a href="/">
+        <carbon-satellite style="font-size: 1.75em;" />
+      </a>
     </h1>
     <div>
-      <a href="/" class="text-sm font-bold rounded p-4 hover:bg-gray-800">MOVIES</a>
-      <a href="/" class="text-sm font-bold rounded p-4 hover:bg-gray-800">SHOWS</a>
-      <a href="/" class="text-sm font-bold rounded p-4 hover:bg-gray-800">SCHEDULE</a>
-      <a href="/" class="text-sm font-bold rounded p-4 hover:bg-gray-800">COLLECTION</a>
+      <a href="/movies" class="text-sm font-bold rounded p-4 hover:bg-gray-800">MOVIES</a>
+      <a href="/shows" class="text-sm font-bold rounded p-4 hover:bg-gray-800">SHOWS</a>
+      <a href="/schedule" class="text-sm font-bold rounded p-4 hover:bg-gray-800">SCHEDULE</a>
+      <a href="/collection" class="text-sm font-bold rounded p-4 hover:bg-gray-800">COLLECTION</a>
     </div>
 
     <div>
