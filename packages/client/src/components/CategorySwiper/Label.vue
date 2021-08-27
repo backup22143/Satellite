@@ -1,3 +1,9 @@
+<script lang="ts">
+export default {
+  name: 'CategorySwiperLabel',
+}
+</script>
+
 <script setup lang="ts">
 const props = defineProps<{
   title: string

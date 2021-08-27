@@ -1,3 +1,4 @@
+
 <script setup lang="ts">
 import { useWindowSize } from '@vueuse/core'
 import SwiperCore, { Navigation } from 'swiper/core'
@@ -97,7 +98,7 @@ const options = {
 
 .button {
   background-color: #121212;
-  @apply h-10 w-10 shadow rounded-full flex justify-center items-center group-hover:bg-gray-600 outline-none;
+  @apply h-10 w-10 shadow rounded-full flex justify-center items-center group-hover:bg-white group-hover:text-black outline-none;
   transition: background-color 0.2s;
 }
 </style>

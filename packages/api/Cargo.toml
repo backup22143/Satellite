@@ -1,0 +1,20 @@
+[package]
+name = "satellite-api"
+description = "API server for Satellite"
+authors = ["Zach Barnes <zach.c.barnes@gmail.com>"]
+# categories = []
+# keywords = []
+# exclude = []
+repository = "https://github.com/zachcb/Satellite"
+homepage = "https://github.com/zachcb/Satellite"
+readme = "README.md"
+license = "Apache-2.0 License"
+version = "0.1.0"
+edition = "2018"
+publish = false
+
+[dependencies]
+# https://api.rocket.rs/v0.5-rc/rocket/#features
+rocket = { version = "^0.5.0-rc.1", features = ["json", "uuid"] }
+redis = "0.21.0"
+postgres = "0.19.1"

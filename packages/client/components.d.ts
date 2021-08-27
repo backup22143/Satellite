@@ -3,10 +3,12 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Calendar: typeof import('./src/components/Calendar/Calendar.vue')['default']
     CarbonArrowLeft: typeof import('virtual:vite-icons/carbon/arrow-left')['default']
     CarbonArrowRight: typeof import('virtual:vite-icons/carbon/arrow-right')['default']
     CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
     CarbonChevronLeft: typeof import('virtual:vite-icons/carbon/chevron-left')['default']
+    CarbonCloseFilled: typeof import('virtual:vite-icons/carbon/close-filled')['default']
     CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
     CarbonDownload: typeof import('virtual:vite-icons/carbon/download')['default']
     CarbonLanguage: typeof import('virtual:vite-icons/carbon/language')['default']
@@ -21,6 +23,7 @@ declare module 'vue' {
     CarbonWarning: typeof import('virtual:vite-icons/carbon/warning')['default']
     CategorySwiper: typeof import('./src/components/CategorySwiper/CategorySwiper.vue')['default']
     ContentRow: typeof import('./src/components/ContentRow/ContentRow.vue')['default']
+    Event: typeof import('./src/components/Calendar/Event.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Grid: typeof import('./src/components/Masonry/Grid.vue')['default']
     Header: typeof import('./src/components/Header/Header.vue')['default']
@@ -28,10 +31,12 @@ declare module 'vue' {
     Input: typeof import('./src/components/Input/Input.vue')['default']
     Item: typeof import('./src/components/Masonry/Item.vue')['default']
     Label: typeof import('./src/components/CategorySwiper/Label.vue')['default']
+    Notification: typeof import('./src/components/Notification/Notification.vue')['default']
     README: typeof import('./src/components/README.md')['default']
     SearchBar: typeof import('./src/components/SearchBar/SearchBar.vue')['default']
     Spinner: typeof import('./src/components/Spinner/Spinner.vue')['default']
     Swiper: typeof import('./src/components/CategorySwiper/Swiper.vue')['default']
+    Toolbar: typeof import('./src/components/Calendar/Toolbar.vue')['default']
   }
 }
 
