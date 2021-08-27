@@ -12,11 +12,9 @@ for (const [index] of month.value.entries())
 </script>
 
 <template>
-  <div class="aspect-w-12 aspect-h-8">
-    <div class="calendar">
-      <div v-for="day in month" :key="day" class="day">
-        {{ day }}
-      </div>
+  <div class="calendar">
+    <div v-for="day in month" :key="day" class="day">
+      {{ day }}
     </div>
   </div>
 </template>
